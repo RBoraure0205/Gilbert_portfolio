@@ -1,3 +1,6 @@
+.bg-trans{
+    background-color: rgba(255, 255, 255, .5);
+}
 footer{
     background-color: #6AC5EC;
 }
@@ -56,4 +59,40 @@ main  .carousel-inner img{
 }
 #carousel .overlay .container .row a,#carousel .overlay .container .row button{
     font-size: 1.2em;
+}
+.about-me img{
+    object-fit: cover;
+    width: 100%;
+    margin: 20px 0;
+}
+.details{
+    margin-top: 10px;
+}
+.details p{
+    font-size: 18px;
+    padding: 0 10px;
+}
+@media (max-width: 320px) { 
+    .about-me img{
+        height: 15vh !important;
+        margin-top: 5px;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 576px) { 
+    .about-me img{
+        height: 25vh !important;
+    }
+}
+@media (min-width: 768px) {
+    .about-me img{
+        height: 30vh !important;
+    }
+}
+@media (min-width: 992px) {
+    .about-me img{
+        height: 40vh !important;
+    }
 }

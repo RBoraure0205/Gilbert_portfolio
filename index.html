@@ -12,10 +12,10 @@
   </head>
   <body>
       <!-- header -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
           <div class="container">
               <a class="navbar-brand" id="brand" href="#">
-                  Gilbert Boraure <span class="post-brand d-flex">Maintenance Eng</span>
+                  Gilbert Boraure <span id="maintenance" class="post-brand d-flex d-md-inline">Maintenance Eng</span>
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About me</a>
+                    <a class="nav-link" href="#about-me">About me</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Certification</a>
@@ -78,6 +78,40 @@
           </div>
       </main>
       <!-- /main -->
+      <!-- about me -->
+      <section id="about-me" class="about-me mt-4 border-bottom border-primary">
+          <div class="container">
+              <div class="row text-center justify-content-center">
+                  <div class="col-12 text-uppercase">
+                      <h3 class="md-h2">About me</h3>
+                      <small class="text-import h4">a little description</small>
+                  </div>
+                  <div class="col-5">
+                    <img src="resources/photos/about.jpeg" class="img-thumnail rounded vh-15" alt="About me image">
+                  </div>
+                  <div class="details">
+                      <div class="row justify-content-center">
+                        <div class="col col-md-8">
+                            <p>I´m a venezuelan aircraft technician, i studied in a venezuelan military school, i got graduated as a aircraft mechanic, i was a military element for several years, in a fact i did many aircraft courses, also i did some -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- /about me -->
+    <!-- Certifications -->
+    <section class="certification mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center text-uppercase">
+                    <small>Look my</small>
+                    <h2>Certifications</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Certifications -->
       <!-- footer -->
     <footer class="pb-4 pt-4" id="footer">
         <div class="container">
@@ -103,5 +137,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function() {
+          if ($("#menu").offset().top > 56) {
+              $("#menu").addClass("bg-trans");
+              $("#maintenance").removeClass("d-md-inline");
+              $("#menu").removeClass("bg-light");
+          } else {
+              $("#menu").removeClass("bg-trans");
+              $("#maintenance").addClass("d-md-inline");
+          }
+        });
+  </script>
   </body>
 </html>
