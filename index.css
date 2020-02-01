@@ -1,0 +1,59 @@
+footer{
+    background-color: #6AC5EC;
+}
+footer a{
+    color: black;
+    font-weight: 600;
+}
+footer a:hover{
+    color: black;
+}
+#brand{
+    font-size: 1.8em;
+    font-weight: 600 !important;
+    color: #6AC5EC;
+}
+nav img{
+    width: 85px;
+    height: 35px;
+}
+.post-brand{
+    font-weight: 300;
+    font-size: .8em;
+    margin-left: 5px;
+    color: black;
+}
+.text-import{
+    color: #6AC5EC !important; 
+}
+main  .carousel-inner img{
+    height: 70vh;
+    object-fit: cover;
+    filter: grayscale(50%);
+}
+#carousel{
+    position: relative;
+}
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+}
+#carousel .overlay .container,#carousel .overlay .container  .row{
+    height: 100%;
+}
+#carousel .overlay .container .row p{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+#carousel .overlay .container .row p{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+#carousel .overlay .container .row a,#carousel .overlay .container .row button{
+    font-size: 1.2em;
+}
