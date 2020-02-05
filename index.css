@@ -1,8 +1,18 @@
-.bg-trans{
-    background-color: rgba(255, 255, 255, .5);
+/* .overlay a{
+    background-color: #00000081;
+} */
+.navText{
+    font-size: 1.2rem;
 }
-footer{
-    background-color: #6AC5EC;
+textarea{
+    width: 100%;
+}
+.proyect p{
+    color: white;
+}
+footer, footer a{
+    background-color: #6AC5EC !important;
+    font-size: 1.5rem !important;
 }
 footer a{
     color: black;

@@ -8,228 +8,405 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>RBoraure Portfolio</title>
+    <title>GBoraure Portfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="0">
       <!-- header -->
       <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
           <div class="container">
               <a class="navbar-brand" id="brand" href="#">
                   Gilbert Boraure <span id="maintenance" class="post-brand d-flex d-md-inline">Maintenance Eng</span>
               </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <li class="nav-item">
+                    <a class="nav-link navText" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about-me">About me</a>
+                    <a class="nav-link navText" href="#about-me">About me</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#certification">Certification</a>
+                    <a class="nav-link navText" href="#certification">Certification</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-import" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-import navText" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Experience
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Proyects</a>
-                      <a class="dropdown-item" href="#">Skills</a>
-                      <a class="dropdown-item" href="#">Colaborations</a>
+                      <a class="dropdown-item navText" href="#proyect">Proyects</a>
+                      <a class="dropdown-item navText" href="#skills">Skills</a>
+                      <a class="dropdown-item navText" href="#profesional">Profesional</a>
                   </li>
                 </ul>
               </div>
           </div>
       </nav>
       <!-- /header -->
-      <!-- main -->
-      <main>
-          <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="resources/photos/c1.jpeg" class="d-block w-100" alt="...">
+        <!-- main -->
+        <main id="home">
+            <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="resources/photos/c1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/photos/c2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/photos/c3.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="resources/photos/c4.jpeg" class="d-block w-100" alt="...">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="resources/photos/c2.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="resources/photos/c3.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="resources/photos/c4.jpeg" class="d-block w-100" alt="...">
+              <div class="overlay">
+                  <div class="container">
+                      <div class="row align-items-center">
+                          <div class="col-md-6 text-center text-md-left">
+                              <h1><span class="text-import">Gilbert Boraure</span>, Aircraft Engineer <span class="d-none d-md-inline">  with a passion for education</span></h1>
+                              <p class="d-none d-md-block">If you are looking for a wise and experiment aircraft technician you are looking for it at the right place, I look for an Aviation Group that have clear objetives, it would be useful for both</p>
+                              <div class="my-5">
+                                <a href="#" data-target="#contact" data-toggle="modal" class="btn btn-info">I want to contact you</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
             </div>
-            <div class="overlay">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 text-center text-md-left">
-                            <h1><span class="text-import">Gilbert Boraure</span>, Aircraft Engineer with a passion for education</h1>
-                            <p class="d-none d-md-block">If you are looking for a wise and experiment aircraft technician you are looking for it at the right place, I look for an Aviation Group that have clear objetives, it would be useful for both</p>
-                            <a href="#" class="btn btn-outline-light">I want to contact you</a>
-                            <button type="button" class="btn btn-dark">Hire me</button>
+        </main>
+        <!-- /main -->
+        <!-- about me -->
+        <section id="about-me" class="about-me mt-4 border-bottom border-primary">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <div class="col-12 text-uppercase">
+                        <h3 class="md-h2">About me</h3>
+                        <small class="text-import h5">a little description</small>
+                    </div>
+                    <div class="col-5">
+                      <img src="resources/photos/about.jpeg" class="img-thumnail rounded vh-15" alt="About me image">
+                    </div>
+                    <div class="details">
+                        <div class="row justify-content-center">
+                          <div class="col col-md-8">
+                              <p>I´m a venezuelan aircraft technician, i studied in a venezuelan military school, i got graduated as a aircraft mechanic, i was a military element for several years, in a fact i did many aircraft courses, also i did some -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-</p>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
-      </main>
-      <!-- /main -->
-      <!-- about me -->
-      <section id="about-me" class="about-me mt-4 border-bottom border-primary">
+        </section>
+        <!-- /about me -->
+      <!-- Certifications -->
+      <section id="certification" class="certification my-4 border-bottom border-primary">
           <div class="container">
-              <div class="row text-center justify-content-center">
-                  <div class="col-12 text-uppercase">
-                      <h3 class="md-h2">About me</h3>
-                      <small class="text-import h4">a little description</small>
+              <div class="row">
+                  <div class="col text-center text-uppercase">
+                      <small>Look my</small>
+                      <h2>Certifications</h2>
                   </div>
-                  <div class="col-5">
-                    <img src="resources/photos/about.jpeg" class="img-thumnail rounded vh-15" alt="About me image">
-                  </div>
-                  <div class="details">
-                      <div class="row justify-content-center">
-                        <div class="col col-md-8">
-                            <p>I´m a venezuelan aircraft technician, i studied in a venezuelan military school, i got graduated as a aircraft mechanic, i was a military element for several years, in a fact i did many aircraft courses, also i did some -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-</p>
+              </div>
+              <div class="row justify-content-start">
+                  <div class="col-12 col-md-6 col-lg-4 mb-5 ">
+                      <div class="card">
+                          <img src="resources/certificades/1.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <div class="badges mb-1">
+                              <span class="badge badge-warning">Fix Wing</span>
+                              <span class="badge badge-info" data-toggle="tooltip" data-placement="top" title="The process of systematically examining, checking and testing aircraft structural members, components and systems, to detect actual or potential unserviceable conditions.">Inspection</span>
+                              <span class="badge badge-primary">Auxiliar train</span>
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="resources/certificades/1.pdf" target="blanck" class="btn btn-primary">See certificate</a>
+                          </div>
                         </div>
-                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-5">
+                      <div class="card">
+                          <img src="resources/certificades/2.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <div class="badges mb-1">
+                              <span class="badge badge-warning">Fix Wing</span>
+                              <span class="badge badge-info">Inspection</span>
+                              <span class="badge badge-primary">Auxiliar train</span>
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="resources/certificades/2.pdf " target="blanck" class="btn btn-primary">See certificate</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-5">
+                      <div class="card">
+                          <img src="resources/certificades/3.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <div class="badges mb-1">
+                              <span class="badge badge-warning">Fix Wing</span>
+                              <span class="badge badge-info">Inspection</span>
+                              <span class="badge badge-primary">Auxiliar train</span>
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="resources/certificades/3.pdf" target="blanck" class="btn btn-primary">See certificate</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-5">
+                      <div class="card">
+                          <img src="resources/certificades/4.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <div class="badges mb-1">
+                              <span class="badge badge-warning">Fix Wing</span>
+                              <span class="badge badge-info">Inspection</span>
+                              <span class="badge badge-primary">Auxiliar train</span>
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="resources/certificades/4.pdf" target="blanck" class="btn btn-primary">See certificate</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-5">
+                      <div class="card">
+                          <img src="resources/certificades/5.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <div class="badges mb-1">
+                              <span class="badge badge-warning">Fix Wing</span>
+                              <span class="badge badge-info">Inspection</span>
+                              <span class="badge badge-primary">Auxiliar train</span>
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="resources/certificades/5.pdf" target="blanck" class="btn btn-primary">See certificate</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-5">
+                      <div class="card">
+                          <img src="resources/certificades/6.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <div class="badges mb-1">
+                              <span class="badge badge-warning">Fix Wing</span>
+                              <span class="badge badge-info">Inspection</span>
+                              <span class="badge badge-primary">Auxiliar train</span>
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="resources/certificades/6.pdf" target="blanck" class="btn btn-primary">See certificate</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-5">
+                      <div class="card">
+                          <img src="resources/certificades/7.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <div class="badges mb-1">
+                              <span class="badge badge-warning">Fix Wing</span>
+                              <span class="badge badge-info">Inspection</span>
+                              <span class="badge badge-primary">Auxiliar train</span>
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="resources/certificades/7.pdf" target="blanck" class="btn btn-primary">See certificate</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-5">
+                      <div class="card">
+                          <img src="resources/certificades/8.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <div class="badges mb-1">
+                              <span class="badge badge-warning">Fix Wing</span>
+                              <span class="badge badge-info">Inspection</span>
+                              <span class="badge badge-primary">Auxiliar train</span>
+                            </div>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="resources/certificades/8.pdf" target="blanck" class="btn btn-primary">See certificate</a>
+                          </div>
+                        </div>
                   </div>
               </div>
           </div>
       </section>
-      <!-- /about me -->
-    <!-- Certifications -->
-    <section id="certification" class="certification my-4">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center text-uppercase">
-                    <small>Look my</small>
-                    <h2>Certifications</h2>
-                </div>
+      <!-- /Certifications -->
+      <!-- Proyects -->
+      <section id="proyect" class="proyect border-bottom border-primary">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 text-center mb-2 text-uppercase">
+              <p style="color: black;">check out my</p>
+              <h3 class="h2">Proyect</h3>
             </div>
-            <div class="row justify-content-start">
-                <div class="col-12 col-md-6 col-lg-4 mb-5 ">
-                    <div class="card">
-                        <img src="resources/certificades/1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="resources/certificades/1.pdf" target="blanck" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="resources/certificades/2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="resources/certificades/2.pdf " target="blanck" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="resources/certificades/3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="resources/certificades/3.pdf" target="blanck" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="resources/certificades/4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="resources/certificades/4.pdf" target="blanck" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="resources/certificades/5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="resources/certificades/5.pdf" target="blanck" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="resources/certificades/6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="resources/certificades/6.pdf" target="blanck" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="resources/certificades/7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="resources/certificades/7.pdf" target="blanck" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="resources/certificades/8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="resources/certificades/8.pdf" target="blanck" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
+            <div class="col-12 col-md-4 text-center">
+              <img src="resources/photos/arg logo.jpg" alt="Logo de proyecto">
             </div>
+            <div class="col-12 col-md bg-dark pt-3 pr-2 align-content-center">
+              <h4 class="text-import">Arg Solutions and Instructions</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget tristique arcu. Praesent justo risus, ullamcorper a lacinia quis, venenatis eu mi. In sit amet nisi eu mauris semper congue. Praesent ultrices, nunc id laoreet molestie, augue massa consectetur urna, non aliquam nisl ex ac odio. Pellentesque eleifend lectus sit amet purus faucibus, id venenatis nisi facilisis. Quisque cursus hendrerit turpis, vitae elementum neque venenatis in. Quisque id nibh quis dui sagittis accumsan. Donec efficitur aliquam semper.</p>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- /Certifications -->
+      </section>
+      <!-- /Proyects -->
+      <!-- skill -->
+      <section id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center text-uppercase my-3">
+                <p>check out my</p>
+                <h3 class="h2">skills</h3>
+            </div>
+          </div>
+          <div class="row">
+            <ul class="list-unstyled">
+              <li class="media border">
+                <img src="resources/photos/mechanic.svg" class="mr-3" alt="mechanic">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Skilled Mechanic</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </li>
+              <li class="media my-4 border">
+                <img src="resources/photos/tools.svg" class="mr-3" alt="Tools">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Tools knowledge</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </li>
+              <li class="media border">
+                <img src="resources/photos/voltmeter.svg" class="mr-3" alt="Volt">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Electricity knowledge</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
       <!-- footer -->
     <footer class="pb-4 pt-4" id="footer">
         <div class="container">
             <div class="row text-center">
-                <div class="col-12 col-lg boder">
-                    <a href="#">FAQ</a>
+                <div class="col-12 col-lg">
+                    <a data-target="#contact" data-toggle="modal">Contact</a>
                 </div>
                 <div class="col-12 col-lg">
-                    <a href="#">Contact</a>
-                </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Terms & Conditions</a>
-                </div>
-                <div class="col-12 col-lg">
-                    <a href="#">Privacy</a>
+                    <a data-target="#privacy" data-toggle="modal">Privacy</a>
                 </div>
             </div>
         </div>
     </footer>
     <!-- /footer -->
+    <!-- modals -->
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h5 class="modal-title" id="contactTitle">Contact me</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <form action="">
+            <div class="form-row my-2">
+              <label for="email" class="col-12">Your Email address</label>
+              <input type="email" class="form-control col-12" id="address" placeholder="name@example.com">
+            </div>
+              <div class="form-row my-2">
+                <label class="col-12">Your Name</label>
+                <div class="col-12 col-md-6">
+                  <input type="text" class="form-control form-group" id="conName" placeholder="Your First name">
+                </div>
+                <div class="col-12 col-md-6">
+                  <input type="text" class="form-control form-group" id="conLastName" placeholder="Your Last name">
+              </div>
+              </div>
+              <div class="form-row my-2">
+                <label class="col-12">Extra information</label>
+                <textarea class="form-control col-12" id="text"></textarea>
+              </div>
+           </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="sendContact" class="btn btn-primary" data-dismiss="modal">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="privacy" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyTitle">Terms and Condition---Privacy</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5>INFORMACIÓN RELEVANTE</h5>
+            <p> Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento. Todas los productos  que son ofrecidos por nuestro sitio web pudieran ser creadas, cobradas, enviadas o presentadas por una página web tercera y en tal caso estarían sujetas a sus propios Términos y Condiciones. En algunos casos, para adquirir un producto, será necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña.</p>
+            <h5>USO NO AUTORIZADO</h5>
+            <p>En caso de que aplique (para venta de software, templetes, u otro producto de diseño y programación) usted no puede colocar uno de nuestros productos, modificado o sin modificar, en un CD, sitio web o ningún otro medio y ofrecerlos para la redistribución o la reventa de ningún tipo.</p> 
+            <h5>PROPIEDAD</h5> 
+            <p>Usted no puede declarar propiedad intelectual o exclusiva a ninguno de nuestros productos, modificado o sin modificar. Todos los productos son propiedad  de los proveedores del contenido. En caso de que no se especifique lo contrario, nuestros productos se proporcionan  sin ningún tipo de garantía, expresa o implícita. En ningún esta compañía será  responsables de ningún daño incluyendo, pero no limitado a, daños directos, indirectos, especiales, fortuitos o consecuentes u otras pérdidas resultantes del uso o de la imposibilidad de utilizar nuestros productos.</p> 
+            <h5>PRIVACIDAD</h5> 
+            <p>Este sitio web http://gboraure.epizy.com/ garantiza que la información personal que usted envía cuenta con la seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una validación de los pedidos no serán entregados a terceros, salvo que deba ser revelada en cumplimiento a una orden judicial o requerimientos legales.
+            La suscripción a boletines de correos electrónicos publicitarios es voluntaria y podría ser seleccionada al momento de crear su cuenta.</p> 
+            <p>GBoraure reserva los derechos de cambiar o de modificar estos términos sin previo aviso.</p> 
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /modals -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script>
-        $(window).scroll(function() {
-          if ($("#menu").offset().top > 56) {
-              $("#menu").addClass("bg-trans");
-              $("#maintenance").removeClass("d-md-inline");
-              $("#menu").removeClass("bg-light");
-          } else {
-              $("#menu").removeClass("bg-trans");
-              $("#maintenance").addClass("d-md-inline");
-          }
-        });
+      const sendContact= document.getElementById('sendContact')
+      sendContact.addEventListener('click',contact)
+      function contact() {  
+      var user = {
+        email: document.getElementById("address").value,
+        name: document.getElementById("conName").value,
+        lastName:document.getElementById("conLastName").value,
+        Text:document.getElementById("text").value
+      }
+      var asunto= "cualquier cosa"
+      Email.send({
+        SecureToken : "6db5e348-78df-4e00-a844-b8f9a10f4ffc",
+        To : "ricardoboraure@gmail.com",
+        From : "ricardoboraure@gmail.com",
+        Subject : "Contacto",
+        Body : user.email + " " + user.name + " " + user.lastName + " " + user.Text
+      }).then(
+        message => alert(message)
+      );
+      user.email.value="" 
+      user.name.value=""
+      user.lastName.value=""
+      user.Text.value=""
+    }
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
   </script>
   </body>
 </html>
